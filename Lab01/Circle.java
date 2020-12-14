@@ -1,3 +1,9 @@
+/**
+ * The Circle class holds the properties of a Circle.
+ * 
+ * @author Dominic Lim
+ * @version: CS2030S AY20/21 Semester 1, Lab 1
+ */
 class Circle {
     private double radius;
     Point pt;

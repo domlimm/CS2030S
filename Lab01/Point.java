@@ -35,7 +35,6 @@ class Point {
         return Math.sqrt(Math.pow(q.x - this.x, 2) + Math.pow(q.y - this.y, 2));
     }
 
-    // include a toString method
     @Override
     public String toString() {
         return String.format("point (%.3f, %.3f)", this.x, this.y);

@@ -2,7 +2,7 @@
  * The BigCruise class extends parent Cruise and holds its specific properties.
  * 
  * @author Dominic Lim
- * @version: CS2030S AY20/21 Semester 1, Lab 1
+ * @version: CS2030S AY20/21 Semester 1, Lab 2
  */
 class BigCruise extends Cruise {
     public BigCruise(String identifier, int arrivalTime, int cruiseLength, int noOfPassengers) {

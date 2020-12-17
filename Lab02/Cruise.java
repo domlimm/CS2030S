@@ -1,3 +1,9 @@
+/**
+ * The Cruise class holds properties of a cruise.
+ * 
+ * @author Dominic Lim
+ * @version: CS2030S AY20/21 Semester 1, Lab 2
+ */
 class Cruise {
     private final String identifier;
     private final int arrivalTime;

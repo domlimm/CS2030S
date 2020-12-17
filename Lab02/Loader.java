@@ -1,3 +1,9 @@
+/**
+ * The Loader class holds properties of a loader.
+ * 
+ * @author Dominic Lim
+ * @version: CS2030S AY20/21 Semester 1, Lab 2
+ */
 class Loader {
     private final int identifier;
     private final Cruise cruise;

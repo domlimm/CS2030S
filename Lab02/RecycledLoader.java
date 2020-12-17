@@ -1,3 +1,9 @@
+/**
+ * The RecycledLoader class extends parent Loader.
+ * 
+ * @author Dominic Lim
+ * @version: CS2030S AY20/21 Semester 1, Lab 2
+ */
 class RecycledLoader extends Loader {
     private final int MAINTENANCE_TIME = 60;
 

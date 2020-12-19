@@ -12,7 +12,6 @@ public abstract class Services {
         return timeInMinutes >= startPeak && timeInMinutes <= endPeak;
     }
 
-    // Helper
     private static int getMinutes(int time) {
         return time % 100;
     }

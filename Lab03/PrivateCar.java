@@ -14,10 +14,10 @@ public class PrivateCar extends Driver {
     }
 
     public String selectService(Request r) {
-        double jr = new JustRide().computeFare(r);
-        double sar = new ShareARide().computeFare(r);
+        double justRide = new JustRide().computeFare(r);
+        double shareARide = new ShareARide().computeFare(r);
 
-        return jr >= sar ? "ShareARide" : "JustRide";
+        return justRide >= shareARide ? "ShareARide" : "JustRide";
     }
 
     public double finalFare(String serviceSelected, Request r) {

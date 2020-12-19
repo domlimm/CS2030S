@@ -14,10 +14,10 @@ public class NormalCab extends Driver {
     }
 
     public String selectService(Request r) {
-        double jr = new JustRide().computeFare(r);
-        double tac = new TakeACab().computeFare(r);
+        double justRide = new JustRide().computeFare(r);
+        double takeACab = new TakeACab().computeFare(r);
 
-        return jr >= tac ? "TakeACab" : "JustRide";
+        return justRide >= takeACab ? "TakeACab" : "JustRide";
     }
 
     public double finalFare(String serviceSelected, Request r) {

@@ -128,7 +128,6 @@ class ImmutableList<T> {
         return new ImmutableList<R>(finalList);
     }
 
-    // Helper
     public ImmutableList<T> toImmutableList(List<T> list) {
         return new ImmutableList<T>(list);
     }

@@ -2,6 +2,14 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
 
+/**
+ * The KeyableMap class is a generic class of type V which is a child of
+ * Keyable. It also implements the Keyable interface, alongisde containing
+ * attributes of a KeyableMap.
+ * 
+ * @author Dominic Lim
+ * @version: CS2030S AY20/21 Semester 1, Lab 5
+ */
 public class KeyableMap<V extends Keyable> implements Keyable {
     private final String key;
     private final Map<String, V> m;
@@ -29,7 +37,7 @@ public class KeyableMap<V extends Keyable> implements Keyable {
         String s = "";
         int size = this.m.size();
 
-        for (Map.Entry<String, V> e: this.m.entrySet()) {
+        for (Map.Entry<String, V> e : this.m.entrySet()) {
             --size;
 
             if (size == 0) {

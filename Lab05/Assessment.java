@@ -1,3 +1,10 @@
+/**
+ * The Assessment class implements an interface Keyable and holds properties of
+ * an Assessment.
+ * 
+ * @author Dominic Lim
+ * @version: CS2030S AY20/21 Semester 1, Lab 5
+ */
 public class Assessment implements Keyable {
     private final String test;
     private final String grade;
@@ -17,7 +24,6 @@ public class Assessment implements Keyable {
 
     @Override
     public String toString() {
-        return String.format("{%s: %s}",
-                this.getKey(), this.getGrade());
+        return String.format("{%s: %s}", this.getKey(), this.getGrade());
     }
 }

@@ -1,5 +1,12 @@
 import java.util.Scanner;
 
+/**
+ * The Main class receives the modules that students took in a period with their
+ * respective grades.
+ * 
+ * @author Dominic Lim
+ * @version: CS2030S AY20/21 Semester 1, Lab 5
+ */
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -15,13 +22,10 @@ public class Main {
             String test = data[2];
             String grade = data[3];
 
-            roster.get(id)
-                .ifPresentOrElse(s -> s.get(code)
-                        .ifPresentOrElse(m -> m.put(new Assessment(test, grade)),
-                                () -> s.put(new Module(code).put(new Assessment(test, grade)))),
-                () -> roster.put(new Student(id)
-                        .put(new Module(code)
-                        .put(new Assessment(test, grade)))));
+            roster.get(id).ifPresentOrElse(
+                    s -> s.get(code).ifPresentOrElse(m -> m.put(new Assessment(test, grade)),
+                            () -> s.put(new Module(code).put(new Assessment(test, grade)))),
+                    () -> roster.put(new Student(id).put(new Module(code).put(new Assessment(test, grade)))));
 
             --records;
         }

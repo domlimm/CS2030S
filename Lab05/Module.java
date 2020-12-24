@@ -1,3 +1,9 @@
+/**
+ * The Module class is a child of parent KeyableMap.
+ * 
+ * @author Dominic Lim
+ * @version: CS2030S AY20/21 Semester 1, Lab 5
+ */
 public class Module extends KeyableMap<Assessment> {
     private final String code;
 

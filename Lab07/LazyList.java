@@ -5,6 +5,13 @@ import java.util.function.UnaryOperator;
 import java.util.stream.Stream;
 import java.util.stream.Collectors;
 
+/**
+ * The LazyList class is of type generic T which extends the Comparable
+ * interface. It holds Lazy objects. All of which are lazily evaluated.
+ * 
+ * @author Dominic Lim
+ * @version: CS2030S AY20/21 Semester 1, Lab 7
+ */
 public class LazyList<T extends Comparable<T>> {
     private List<Lazy<T>> list;
 

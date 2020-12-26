@@ -5,6 +5,13 @@ import java.util.function.Supplier;
 import java.util.NoSuchElementException;
 import java.util.Optional;
 
+/**
+ * The Lazy class is of type generic T which extends the Comparable interface.
+ * It contains the methods of an ArrayList. All of which are lazily evaluated.
+ * 
+ * @author Dominic Lim
+ * @version: CS2030S AY20/21 Semester 1, Lab 7
+ */
 public class Lazy<T extends Comparable<T>> {
     private Optional<T> value;
     private final Supplier<T> supplier;

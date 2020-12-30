@@ -3,7 +3,7 @@
  * equals method to compare Instructor objects.
  * 
  * @author Dominic Lim
- * @version: CS2030S AY20/21 Semester 1, Lab 7
+ * @version: CS2030S AY20/21 Semester 1, Practical Assessment 1
  */
 public class Instructor {
     private final String name;

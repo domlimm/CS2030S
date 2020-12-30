@@ -1,3 +1,9 @@
+/**
+ * The LTInfo class holds details of a Lecture/Tutorial.
+ * 
+ * @author Dominic Lim
+ * @version: CS2030S AY20/21 Semester 1, Practical Assessment 1
+ */
 public abstract class LTInfo {
     private final String code;
     private final int classId;

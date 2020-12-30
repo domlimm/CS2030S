@@ -1,3 +1,10 @@
+/**
+ * The Tutorial class extends parent LTInfo. It contains methods
+ * that make comparisons between other LTInfo objects.
+ * 
+ * @author Dominic Lim
+ * @version: CS2030S AY20/21 Semester 1, Practical Assessment 1
+ */
 public class Tutorial extends LTInfo {
     private final char type;
     

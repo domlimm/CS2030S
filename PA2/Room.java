@@ -2,6 +2,13 @@ import java.util.List;
 import java.util.ArrayList;
 import java.util.function.Function;
 
+/**
+ * The Room class contains a List of things (Candle, Sword, Troll) and holds
+ * methods that simulate the game.
+ * 
+ * @author Dominic Lim
+ * @version: CS2030S AY20/21 Semester 1, Practical Assessment 2
+ */
 public class Room {
     private final List<Tg> things;
     private final String location;

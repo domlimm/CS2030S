@@ -1,6 +1,13 @@
 import java.util.List;
 import java.util.ArrayList;
 
+/**
+ * The Candle class extends parent Thing class. It holds the respective states
+ * of a Candle.
+ * 
+ * @author Dominic Lim
+ * @version: CS2030S AY20/21 Semester 1, Practical Assessment 2
+ */
 public class Candle extends Tg {
     private final List<String> states;
     private final String currentState;

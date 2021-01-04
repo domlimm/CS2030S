@@ -4,7 +4,8 @@ import java.util.List;
 
 /**
  * The Event class holds information of an Event.
- * */
+ * 
+ */
 public abstract class Event {
     private final Customer customer;
     private final List<Server> servers;

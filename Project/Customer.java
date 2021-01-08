@@ -2,6 +2,9 @@ package cs2030.simulator;
 
 /**
  * The Customer class holds the details of a Customer.
+ *
+ * @author Dominic Lim
+ * @version: CS2030S AY20/21 Semester 1, Project 1
  */
 public class Customer {
     private final int customerID;

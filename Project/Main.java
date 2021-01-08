@@ -16,6 +16,9 @@ import java.util.List;
 
 /**
  * The Main class of the program.
+ *
+ * @author Dominic Lim
+ * @version: CS2030S AY20/21 Semester 1, Project 1
  */
 public class Main {
     /**

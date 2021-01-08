@@ -6,7 +6,9 @@ import java.util.List;
 /**
  * The ArriveEvent class inherits the properties of its parent Event class.
  * It is used to decide what is next for when a Customer arrives.
- * 
+ *
+ * @author Dominic Lim
+ * @version: CS2030S AY20/21 Semester 1, Project 1
  */
 public class ArriveEvent extends Event {
     /**

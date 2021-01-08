@@ -1,5 +1,12 @@
 package cs2030.simulator;
 
+/**
+ * This Statistics class handles the calculation of the number of customers
+ * served, left and average waiting time of a customer.
+ *
+ * @author Dominic Lim
+ * @version: CS2030S AY20/21 Semester 1, Project 1
+ */
 public class Statistics {
     private final int numCustomersServed;
     private final int numCustomersLeft;

@@ -11,6 +11,8 @@ My source codes for all labs/projects/tests/config files in AY2020/2021 Semester
 8. Lab 8
 9. Practical Assessment 1
 10. Practical Assessment 2
+11. Project 1
+12. Project 2
 
 For any queries, do not hesitate to create a new issue under this project.
 

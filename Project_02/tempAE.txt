@@ -1,0 +1,59 @@
+if (customer.isGreedy()) {
+                    Server leastCust = shop
+                            .getServers()
+                            .stream()
+                            .filter(s -> s.customerQueueSize() < s.getCustomerLimit())
+                            .min(Comparator.comparing(Server::customerQueueSize))
+                            .get();
+                    boolean isSelfCO = leastCust.isSelfCheckout();
+
+                    if (leastCust.customerQueueSize() < leastCust.getCustomerLimit() ||
+                            shop.getSelfCheckQ().size() < leastCust.getCustomerLimit()) {
+                        if (isSelfCO) {  
+                            List<Server> tempList = shop
+                                    .getServers()
+                                    .stream()
+                                    .filter(s -> !s.isSelfCheckout())
+                                    .collect(Collectors.toList());
+                            final int id = tempList.size() + 1;
+                            Server returnServer = shop.find(s -> s.getIdentifier() == id)
+                                    .get().queueCustomer(customer);
+                            Optional<Server> counterServer = shop.getServers()
+                                    .stream()
+                                    .filter(s -> s.isSelfCheckout())
+                                    .min(Comparator.comparing(Server::getAvailableTime));
+    
+                            return new Pair<Shop, Event>(
+                                    shop.replace(returnServer).queueCustomer(customer),
+                                    new SCWaitEvent(customer, returnServer,
+                                            customer.getArrivalTime(),
+                                            counterServer.get().getAvailableTime()));
+                        } else {
+                            leastCust = leastCust.queueCustomer(customer);
+    
+                            return new Pair<Shop, Event>(shop.replace(leastCust),
+                                    new WaitEvent(customer, leastCust, customer.getArrivalTime()));
+                        }
+                    }
+                    
+                } else {
+                    Server serverCustQ = queueServer.get().queueCustomer(customer);
+                    Optional<Server> counterServer = shop.getServers()
+                            .stream()
+                            .filter(s -> s.isSelfCheckout())
+                            .min(Comparator.comparing(Server::getAvailableTime));
+    
+                    if (!serverCustQ.isSelfCheckout()) {
+                        return new Pair<Shop, Event>(shop.replace(serverCustQ),
+                                new WaitEvent(customer, serverCustQ, customer.getArrivalTime()));
+                    }
+    
+                    if (counterServer.isPresent() &&
+                            shop.getSelfCheckQ().size() < counterServer.get().getCustomerLimit()) {
+                        return new Pair<Shop, Event>(
+                                shop.replace(serverCustQ).queueCustomer(customer),
+                                new SCWaitEvent(customer, serverCustQ,
+                                        customer.getArrivalTime(),
+                                        counterServer.get().getAvailableTime()));
+                    }
+                }

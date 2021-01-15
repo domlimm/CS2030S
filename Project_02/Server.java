@@ -5,6 +5,9 @@ import java.util.Queue;
 
 /**
  * The Server class holds the details of a Server.
+ *
+ * @author Dominic Lim
+ * @version: CS2030S AY20/21 Semester 1, Project 1
  */
 public class Server {
     private final int identifier;

@@ -5,6 +5,9 @@ import java.util.Comparator;
 /**
  * This EventCompare class compares two events for sorting purposes
  * in the queue.
+ *
+ * @author Dominic Lim
+ * @version: CS2030S AY20/21 Semester 1, Project 1
  */
 public class EventCompare implements Comparator<Event> {
     @Override

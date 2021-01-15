@@ -3,6 +3,9 @@ package cs2030.simulator;
 /**
  * The DoneEvent class inherits the properties of its parent Event class.
  * It is used for when a server is done serving a customer.
+ *
+ * @author Dominic Lim
+ * @version: CS2030S AY20/21 Semester 1, Project 1
  */
 public class DoneEvent extends Event {
     private final Server server;

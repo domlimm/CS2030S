@@ -3,6 +3,9 @@ package cs2030.simulator;
 /**
  * The Statistics class produces analysis on the simulation.
  * I.e. Number of customers served, number of customers left, waiting time for a customer.
+ *
+ * @author Dominic Lim
+ * @version: CS2030S AY20/21 Semester 1, Project 1
  */
 public class Statistics {
     private final int numCustomersServed;

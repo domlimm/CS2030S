@@ -3,6 +3,9 @@ package cs2030.simulator;
 /**
  * This LeaveEvent class inherits the properties of its parent Event class.
  * It is used when the queue is full when the customer arrives.
+ *
+ * @author Dominic Lim
+ * @version: CS2030S AY20/21 Semester 1, Project 1
  */
 public class LeaveEvent extends Event {
     /**

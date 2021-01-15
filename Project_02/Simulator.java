@@ -13,6 +13,9 @@ import java.util.stream.Collectors;
  * This Simulator class is the handler of the discrete event simulator with
  * the process of assigning/removing servers to customers waiting
  * in a priority queue.
+ *
+ * @author Dominic Lim
+ * @version: CS2030S AY20/21 Semester 1, Project 1
  */
 public class Simulator {
     private final Optional<Shop> shop;

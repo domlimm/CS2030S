@@ -7,6 +7,9 @@ import java.util.Queue;
 /**
  * This ContWaitEvent class inherits the properties of its parent Event class.
  * It is used when a server is unable to serve a customer in its queue.
+ *
+ * @author Dominic Lim
+ * @version: CS2030S AY20/21 Semester 1, Project 1
  */
 public class ContWaitEvent extends Event {
     private final double startTime;

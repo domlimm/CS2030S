@@ -6,6 +6,9 @@ import java.util.Queue;
  * This WaitEvent class inherits the properties of its parent Event class. It is
  * used when a customer arrives and there are no servers available to serve
  * him/her, but the customer is welcome to wait for an available server.
+ *
+ * @author Dominic Lim
+ * @version: CS2030S AY20/21 Semester 1, Project 1
  */
 public class WaitEvent extends Event {
     private final Customer customer;

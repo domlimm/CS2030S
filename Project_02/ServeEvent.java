@@ -5,6 +5,9 @@ import java.util.Queue;
 /**
  * The ServeEvent class inherits the properties of its parent Event class.
  * It is used when a Customer is being served by a server.
+ *
+ * @author Dominic Lim
+ * @version: CS2030S AY20/21 Semester 1, Project 1
  */
 public class ServeEvent extends Event {
     private final Customer customer;

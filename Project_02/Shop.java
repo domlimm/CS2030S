@@ -13,6 +13,9 @@ import java.util.stream.Stream;
 /**
  * The Shop class holds all servers, human and self checkout.
  * It aids with the communication between servers and their customers.
+ *
+ * @author Dominic Lim
+ * @version: CS2030S AY20/21 Semester 1, Project 1
  */
 public class Shop {
     private final List<Server> servers;

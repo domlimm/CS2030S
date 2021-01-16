@@ -8,7 +8,7 @@ import java.util.List;
  * The Event class holds information of an Event.
  *
  * @author Dominic Lim
- * @version: CS2030S AY20/21 Semester 1, Project 1
+ * @version: CS2030S AY20/21 Semester 1, Project 2
  */
 public abstract class Event {
     private final Customer customer;

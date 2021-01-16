@@ -6,7 +6,7 @@ import java.util.function.Supplier;
  * The Customer class holds the details of a Customer.
  *
  * @author Dominic Lim
- * @version: CS2030S AY20/21 Semester 1, Project 1
+ * @version: CS2030S AY20/21 Semester 1, Project 2
  */
 public class Customer {
     private final int customerID;

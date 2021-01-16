@@ -5,7 +5,7 @@ package cs2030.simulator;
  * It is used for when a server is done serving a customer.
  *
  * @author Dominic Lim
- * @version: CS2030S AY20/21 Semester 1, Project 1
+ * @version: CS2030S AY20/21 Semester 1, Project 2
  */
 public class DoneEvent extends Event {
     private final Server server;

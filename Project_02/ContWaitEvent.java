@@ -9,7 +9,7 @@ import java.util.Queue;
  * It is used when a server is unable to serve a customer in its queue.
  *
  * @author Dominic Lim
- * @version: CS2030S AY20/21 Semester 1, Project 1
+ * @version: CS2030S AY20/21 Semester 1, Project 2
  */
 public class ContWaitEvent extends Event {
     private final double startTime;

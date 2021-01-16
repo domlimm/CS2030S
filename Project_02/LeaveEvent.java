@@ -5,7 +5,7 @@ package cs2030.simulator;
  * It is used when the queue is full when the customer arrives.
  *
  * @author Dominic Lim
- * @version: CS2030S AY20/21 Semester 1, Project 1
+ * @version: CS2030S AY20/21 Semester 1, Project 2
  */
 public class LeaveEvent extends Event {
     /**

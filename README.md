@@ -1,4 +1,4 @@
-# NUS CS2030/S
+# NUS CS2030/S Programming Methodology II
 My source codes for all labs/projects/tests/config files in AY2020/2021 Semester 1 of CS2030S.
 
 1. Lab 1
